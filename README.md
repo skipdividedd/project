@@ -10,6 +10,6 @@
     Он умеет работать с одной и многими грамматическими категориями.
 * train_classification() -- обычная пробинг-классификация (log reg). Scores лежат в аттрибуте scores (сохраните в отдельную переменную)
 * train_classification(n=5, goal='ranking') -- записывает в словарь ранжированные нейроны. Если n=5, запишет для каждой категории по 5 top-нейронов. Они лежат в аттрибуте ordered_neurons.
-* train_classification(n=5, goal='keep_ablation') -- пробинг на топ-n нейронах. Scores лежат в аттрибуте ablation_scores (сохраните в отдельную переменную)
-* train_classification(i=9884, goal='remove_ablation') -- пробинг на bottom-n нейронах. Удаляет i нейронов. Scores лежат в аттрибуте ablation_scores (сохраните в отдельную переменную)
+* train_classification(n=5, goal='keep_ablation') -- пробинг на топ-n нейронах. Scores лежат в аттрибуте ablation_top_scores (сохраните в отдельную переменную)
+* train_classification(i=9884, goal='remove_ablation') -- пробинг на bottom-n нейронах. Удаляет i нейронов. Scores лежат в аттрибуте ablation_bottom_scores (сохраните в отдельную переменную)
 * train_layers -- учится на всех слоях по очереди. Scores лежат в аттрибуте scores (сохраните в отдельную переменную)
