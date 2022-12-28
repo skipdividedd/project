@@ -153,12 +153,11 @@ class ConvertSample:
 
 
     def writer(self) -> Tuple[str, ...]: 
-        
         """
         Writes to a file
         """
+
         result_datatrain, result_labeltrain, result_cdatatrain, result_clabeltrain, result_datatest, result_labeltest = self.create_paths()
-       
         
         dict_filter_train, dict_filter_test, dict_control_task = self.create_dicts()
 
